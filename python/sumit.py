@@ -13,7 +13,8 @@ inputdata = [
 
 def sumIt(_input):
     return sum([sum([item *2 if item < 10 else item/2
-                     for item in data_area])
+                     for item in data_area
+                     if item%2 == 0])
                 for data_area in _input
                 if len(data_area)>5])
 
