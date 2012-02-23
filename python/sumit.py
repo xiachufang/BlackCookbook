@@ -11,6 +11,8 @@ inputdata = [
        [10,11,53,58]
         ]
 
+#经同行测试，如果先生成 list 再sum，对
+#此示例来说，速度更快。
 def sumIt(_input):
     return sum(sum(item *2 if item < 10 else item/2
                      for item in data_area
