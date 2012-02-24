@@ -21,6 +21,8 @@
 		39C060A914F7736E009907AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608E14F7736C009907AE /* CoreData.framework */; };
 		39C060B114F7736E009907AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39C060AF14F7736E009907AE /* InfoPlist.strings */; };
 		39C060B414F7736F009907AE /* SnapNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C060B314F7736F009907AE /* SnapNotesTests.m */; };
+		39C060C114F77742009907AE /* NotesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C060C014F77742009907AE /* NotesTableView.m */; };
+		39C060C414F7779A009907AE /* NotesLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C060C314F7779A009907AE /* NotesLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		39C060B014F7736E009907AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39C060B214F7736E009907AE /* SnapNotesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapNotesTests.h; sourceTree = "<group>"; };
 		39C060B314F7736F009907AE /* SnapNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapNotesTests.m; sourceTree = "<group>"; };
+		39C060BF14F77742009907AE /* NotesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesTableView.h; sourceTree = "<group>"; };
+		39C060C014F77742009907AE /* NotesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesTableView.m; sourceTree = "<group>"; };
+		39C060C214F7779A009907AE /* NotesLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesLine.h; sourceTree = "<group>"; };
+		39C060C314F7779A009907AE /* NotesLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,8 @@
 		39C0609014F7736C009907AE /* SnapNotes */ = {
 			isa = PBXGroup;
 			children = (
+				39C060BE14F774D3009907AE /* Controllers */,
+				39C060BD14F7749C009907AE /* models */,
 				39C0609914F7736D009907AE /* XcfAppDelegate.h */,
 				39C0609A14F7736D009907AE /* XcfAppDelegate.m */,
 				39C0609C14F7736E009907AE /* SnapNotes.xcdatamodeld */,
@@ -150,6 +158,24 @@
 				39C060AF14F7736E009907AE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39C060BD14F7749C009907AE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				39C060C214F7779A009907AE /* NotesLine.h */,
+				39C060C314F7779A009907AE /* NotesLine.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		39C060BE14F774D3009907AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				39C060BF14F77742009907AE /* NotesTableView.h */,
+				39C060C014F77742009907AE /* NotesTableView.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +286,8 @@
 				39C0609714F7736D009907AE /* main.m in Sources */,
 				39C0609B14F7736D009907AE /* XcfAppDelegate.m in Sources */,
 				39C0609E14F7736E009907AE /* SnapNotes.xcdatamodeld in Sources */,
+				39C060C114F77742009907AE /* NotesTableView.m in Sources */,
+				39C060C414F7779A009907AE /* NotesLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +377,8 @@
 		39C060B814F7736F009907AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SnapNotes/SnapNotes-Prefix.pch";
 				INFOPLIST_FILE = "SnapNotes/SnapNotes-Info.plist";
@@ -360,6 +390,8 @@
 		39C060B914F7736F009907AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SnapNotes/SnapNotes-Prefix.pch";
 				INFOPLIST_FILE = "SnapNotes/SnapNotes-Info.plist";

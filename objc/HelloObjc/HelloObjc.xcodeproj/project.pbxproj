@@ -29,7 +29,7 @@
 		39C0606214F74DC5009907AE /* HelloObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjc; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C0606614F74DC5009907AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		39C0606914F74DC5009907AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		39C0606C14F74DC5009907AE /* HelloObjc-Prefix.pch */ = {isa = PBXFileReference; path = "HelloObjc-Prefix.pch"; sourceTree = "<group>"; };
+		39C0606C14F74DC5009907AE /* HelloObjc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloObjc-Prefix.pch"; sourceTree = "<group>"; };
 		39C0606D14F74DC5009907AE /* HelloObjc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloObjc.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

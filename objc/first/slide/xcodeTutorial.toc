@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Apple 硬件体系}{3}{0}{1}
+\beamer@sectionintoc {2}{Apple 的软件体系}{8}{0}{2}
+\beamer@sectionintoc {3}{Apple 体系开发技术}{11}{0}{3}
+\beamer@sectionintoc {4}{操作演示阶段}{16}{0}{4}
+\beamer@sectionintoc {5}{学习 Apple 开发体系}{30}{0}{5}

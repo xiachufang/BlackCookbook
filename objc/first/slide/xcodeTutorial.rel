@@ -1,0 +1,30 @@
+;; RefTeX parse info file
+;; File: /Users/march/jobs/BlackCookbook/objc/first/slide/xcodeTutorial.tex
+;; User: march (March Liu)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/march/jobs/BlackCookbook/objc/first/slide/")
+
+(label-numbers)
+
+(bof "/Users/march/jobs/BlackCookbook/objc/first/slide/xcodeTutorial.tex")
+
+(toc "toc" "    1 Apple 应用开发体系" "/Users/march/jobs/BlackCookbook/objc/first/slide/xcodeTutorial.tex" nil 2 "1" "\\section{Apple 应用开发体系}" 945)
+
+("fig:iPod" "f" nil "/Users/march/jobs/BlackCookbook/objc/first/slide/xcodeTutorial.tex" nil "")
+
+("fig:Mac" "f" nil "/Users/march/jobs/BlackCookbook/objc/first/slide/xcodeTutorial.tex" nil "")
+
+(eof "/Users/march/jobs/BlackCookbook/objc/first/slide/xcodeTutorial.tex")
+))
+
