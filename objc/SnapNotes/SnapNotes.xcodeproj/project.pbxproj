@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39C0608914F7736C009907AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608814F7736C009907AE /* UIKit.framework */; };
+		39C0608B14F7736C009907AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608A14F7736C009907AE /* Foundation.framework */; };
+		39C0608D14F7736C009907AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608C14F7736C009907AE /* CoreGraphics.framework */; };
+		39C0608F14F7736C009907AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608E14F7736C009907AE /* CoreData.framework */; };
+		39C0609514F7736D009907AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39C0609314F7736D009907AE /* InfoPlist.strings */; };
+		39C0609714F7736D009907AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0609614F7736D009907AE /* main.m */; };
+		39C0609B14F7736D009907AE /* XcfAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0609A14F7736D009907AE /* XcfAppDelegate.m */; };
+		39C0609E14F7736E009907AE /* SnapNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39C0609C14F7736E009907AE /* SnapNotes.xcdatamodeld */; };
+		39C060A614F7736E009907AE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C060A514F7736E009907AE /* SenTestingKit.framework */; };
+		39C060A714F7736E009907AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608814F7736C009907AE /* UIKit.framework */; };
+		39C060A814F7736E009907AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608A14F7736C009907AE /* Foundation.framework */; };
+		39C060A914F7736E009907AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0608E14F7736C009907AE /* CoreData.framework */; };
+		39C060B114F7736E009907AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39C060AF14F7736E009907AE /* InfoPlist.strings */; };
+		39C060B414F7736F009907AE /* SnapNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C060B314F7736F009907AE /* SnapNotesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39C060AA14F7736E009907AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C0607B14F7736C009907AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C0608314F7736C009907AE;
+			remoteInfo = SnapNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39C0608414F7736C009907AE /* SnapNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C0608814F7736C009907AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39C0608A14F7736C009907AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39C0608C14F7736C009907AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39C0608E14F7736C009907AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		39C0609214F7736D009907AE /* SnapNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SnapNotes-Info.plist"; sourceTree = "<group>"; };
+		39C0609414F7736D009907AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39C0609614F7736D009907AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39C0609814F7736D009907AE /* SnapNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapNotes-Prefix.pch"; sourceTree = "<group>"; };
+		39C0609914F7736D009907AE /* XcfAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcfAppDelegate.h; sourceTree = "<group>"; };
+		39C0609A14F7736D009907AE /* XcfAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcfAppDelegate.m; sourceTree = "<group>"; };
+		39C0609D14F7736E009907AE /* SnapNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnapNotes.xcdatamodel; sourceTree = "<group>"; };
+		39C060A414F7736E009907AE /* SnapNotesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapNotesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C060A514F7736E009907AE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		39C060AE14F7736E009907AE /* SnapNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SnapNotesTests-Info.plist"; sourceTree = "<group>"; };
+		39C060B014F7736E009907AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39C060B214F7736E009907AE /* SnapNotesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapNotesTests.h; sourceTree = "<group>"; };
+		39C060B314F7736F009907AE /* SnapNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapNotesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39C0608114F7736C009907AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C0608914F7736C009907AE /* UIKit.framework in Frameworks */,
+				39C0608B14F7736C009907AE /* Foundation.framework in Frameworks */,
+				39C0608D14F7736C009907AE /* CoreGraphics.framework in Frameworks */,
+				39C0608F14F7736C009907AE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C060A014F7736E009907AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C060A614F7736E009907AE /* SenTestingKit.framework in Frameworks */,
+				39C060A714F7736E009907AE /* UIKit.framework in Frameworks */,
+				39C060A814F7736E009907AE /* Foundation.framework in Frameworks */,
+				39C060A914F7736E009907AE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39C0607914F7736C009907AE = {
+			isa = PBXGroup;
+			children = (
+				39C0609014F7736C009907AE /* SnapNotes */,
+				39C060AC14F7736E009907AE /* SnapNotesTests */,
+				39C0608714F7736C009907AE /* Frameworks */,
+				39C0608514F7736C009907AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39C0608514F7736C009907AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39C0608414F7736C009907AE /* SnapNotes.app */,
+				39C060A414F7736E009907AE /* SnapNotesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39C0608714F7736C009907AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39C0608814F7736C009907AE /* UIKit.framework */,
+				39C0608A14F7736C009907AE /* Foundation.framework */,
+				39C0608C14F7736C009907AE /* CoreGraphics.framework */,
+				39C0608E14F7736C009907AE /* CoreData.framework */,
+				39C060A514F7736E009907AE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39C0609014F7736C009907AE /* SnapNotes */ = {
+			isa = PBXGroup;
+			children = (
+				39C0609914F7736D009907AE /* XcfAppDelegate.h */,
+				39C0609A14F7736D009907AE /* XcfAppDelegate.m */,
+				39C0609C14F7736E009907AE /* SnapNotes.xcdatamodeld */,
+				39C0609114F7736D009907AE /* Supporting Files */,
+			);
+			path = SnapNotes;
+			sourceTree = "<group>";
+		};
+		39C0609114F7736D009907AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39C0609214F7736D009907AE /* SnapNotes-Info.plist */,
+				39C0609314F7736D009907AE /* InfoPlist.strings */,
+				39C0609614F7736D009907AE /* main.m */,
+				39C0609814F7736D009907AE /* SnapNotes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39C060AC14F7736E009907AE /* SnapNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				39C060B214F7736E009907AE /* SnapNotesTests.h */,
+				39C060B314F7736F009907AE /* SnapNotesTests.m */,
+				39C060AD14F7736E009907AE /* Supporting Files */,
+			);
+			path = SnapNotesTests;
+			sourceTree = "<group>";
+		};
+		39C060AD14F7736E009907AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39C060AE14F7736E009907AE /* SnapNotesTests-Info.plist */,
+				39C060AF14F7736E009907AE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39C0608314F7736C009907AE /* SnapNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C060B714F7736F009907AE /* Build configuration list for PBXNativeTarget "SnapNotes" */;
+			buildPhases = (
+				39C0608014F7736C009907AE /* Sources */,
+				39C0608114F7736C009907AE /* Frameworks */,
+				39C0608214F7736C009907AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapNotes;
+			productName = SnapNotes;
+			productReference = 39C0608414F7736C009907AE /* SnapNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39C060A314F7736E009907AE /* SnapNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C060BA14F7736F009907AE /* Build configuration list for PBXNativeTarget "SnapNotesTests" */;
+			buildPhases = (
+				39C0609F14F7736E009907AE /* Sources */,
+				39C060A014F7736E009907AE /* Frameworks */,
+				39C060A114F7736E009907AE /* Resources */,
+				39C060A214F7736E009907AE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39C060AB14F7736E009907AE /* PBXTargetDependency */,
+			);
+			name = SnapNotesTests;
+			productName = SnapNotesTests;
+			productReference = 39C060A414F7736E009907AE /* SnapNotesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39C0607B14F7736C009907AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 39C0607E14F7736C009907AE /* Build configuration list for PBXProject "SnapNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 39C0607914F7736C009907AE;
+			productRefGroup = 39C0608514F7736C009907AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39C0608314F7736C009907AE /* SnapNotes */,
+				39C060A314F7736E009907AE /* SnapNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39C0608214F7736C009907AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C0609514F7736D009907AE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C060A114F7736E009907AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C060B114F7736E009907AE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C060A214F7736E009907AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39C0608014F7736C009907AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C0609714F7736D009907AE /* main.m in Sources */,
+				39C0609B14F7736D009907AE /* XcfAppDelegate.m in Sources */,
+				39C0609E14F7736E009907AE /* SnapNotes.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C0609F14F7736E009907AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C060B414F7736F009907AE /* SnapNotesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39C060AB14F7736E009907AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39C0608314F7736C009907AE /* SnapNotes */;
+			targetProxy = 39C060AA14F7736E009907AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39C0609314F7736D009907AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C0609414F7736D009907AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		39C060AF14F7736E009907AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C060B014F7736E009907AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39C060B514F7736F009907AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39C060B614F7736F009907AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39C060B814F7736F009907AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnapNotes/SnapNotes-Prefix.pch";
+				INFOPLIST_FILE = "SnapNotes/SnapNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		39C060B914F7736F009907AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnapNotes/SnapNotes-Prefix.pch";
+				INFOPLIST_FILE = "SnapNotes/SnapNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		39C060BB14F7736F009907AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SnapNotes.app/SnapNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnapNotes/SnapNotes-Prefix.pch";
+				INFOPLIST_FILE = "SnapNotesTests/SnapNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		39C060BC14F7736F009907AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SnapNotes.app/SnapNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnapNotes/SnapNotes-Prefix.pch";
+				INFOPLIST_FILE = "SnapNotesTests/SnapNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39C0607E14F7736C009907AE /* Build configuration list for PBXProject "SnapNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C060B514F7736F009907AE /* Debug */,
+				39C060B614F7736F009907AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C060B714F7736F009907AE /* Build configuration list for PBXNativeTarget "SnapNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C060B814F7736F009907AE /* Debug */,
+				39C060B914F7736F009907AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		39C060BA14F7736F009907AE /* Build configuration list for PBXNativeTarget "SnapNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C060BB14F7736F009907AE /* Debug */,
+				39C060BC14F7736F009907AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39C0609C14F7736E009907AE /* SnapNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39C0609D14F7736E009907AE /* SnapNotes.xcdatamodel */,
+			);
+			currentVersion = 39C0609D14F7736E009907AE /* SnapNotes.xcdatamodel */;
+			path = SnapNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39C0607B14F7736C009907AE /* Project object */;
+}
