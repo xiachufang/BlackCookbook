@@ -10,6 +10,6 @@
 
 @interface XcfLevenshteinDitstance : NSObject
 
-+ (int) levenshteinDitstanceWithS:(NSString *)x t:(NSString *)y;
++ (int) levenshteinDitstanceFromS:(NSString *)x toT:(NSString *)y;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation XcfLevenshteinDitstance
 
-+ (int) levenshteinDitstanceWithS:(NSString *)s t:(NSString *)t {
++ (int) levenshteinDitstanceFromS:(NSString *)s toT:(NSString *)t {
     int sl = (int)[s length]+1;
     int tl = (int)[t length]+1;
     

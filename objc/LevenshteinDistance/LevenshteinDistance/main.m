@@ -26,7 +26,7 @@ int main (int argc, const char * argv[])
         for (NSString *source in array) {
             for (NSString *target in array) {
                 NSLog(@"the ditance of %@ and %@ is %d", source, target,
-                      [XcfLevenshteinDitstance levenshteinDitstanceWithS:source t:target]);
+                      [XcfLevenshteinDitstance levenshteinDitstanceFromS:source toT:target]);
             }
         }
     }
