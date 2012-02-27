@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3910F47814FB713900841664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3910F47714FB713900841664 /* Foundation.framework */; };
+		3910F47B14FB713900841664 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3910F47A14FB713900841664 /* main.m */; };
+		3910F47F14FB713900841664 /* LevenshteinDistance.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3910F47E14FB713900841664 /* LevenshteinDistance.1 */; };
+		3910F48714FB77BE00841664 /* XcfLevenshteinDitstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3910F48614FB77BE00841664 /* XcfLevenshteinDitstance.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3910F47114FB713900841664 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				3910F47F14FB713900841664 /* LevenshteinDistance.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3910F47314FB713900841664 /* LevenshteinDistance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LevenshteinDistance; sourceTree = BUILT_PRODUCTS_DIR; };
+		3910F47714FB713900841664 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3910F47A14FB713900841664 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3910F47D14FB713900841664 /* LevenshteinDistance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LevenshteinDistance-Prefix.pch"; sourceTree = "<group>"; };
+		3910F47E14FB713900841664 /* LevenshteinDistance.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LevenshteinDistance.1; sourceTree = "<group>"; };
+		3910F48514FB77BE00841664 /* XcfLevenshteinDitstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcfLevenshteinDitstance.h; sourceTree = "<group>"; };
+		3910F48614FB77BE00841664 /* XcfLevenshteinDitstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcfLevenshteinDitstance.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3910F47014FB713900841664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3910F47814FB713900841664 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3910F46814FB713900841664 = {
+			isa = PBXGroup;
+			children = (
+				3910F47914FB713900841664 /* LevenshteinDistance */,
+				3910F47614FB713900841664 /* Frameworks */,
+				3910F47414FB713900841664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3910F47414FB713900841664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3910F47314FB713900841664 /* LevenshteinDistance */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3910F47614FB713900841664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3910F47714FB713900841664 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3910F47914FB713900841664 /* LevenshteinDistance */ = {
+			isa = PBXGroup;
+			children = (
+				3910F47A14FB713900841664 /* main.m */,
+				3910F47E14FB713900841664 /* LevenshteinDistance.1 */,
+				3910F47C14FB713900841664 /* Supporting Files */,
+				3910F48514FB77BE00841664 /* XcfLevenshteinDitstance.h */,
+				3910F48614FB77BE00841664 /* XcfLevenshteinDitstance.m */,
+			);
+			path = LevenshteinDistance;
+			sourceTree = "<group>";
+		};
+		3910F47C14FB713900841664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3910F47D14FB713900841664 /* LevenshteinDistance-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3910F47214FB713900841664 /* LevenshteinDistance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3910F48214FB713900841664 /* Build configuration list for PBXNativeTarget "LevenshteinDistance" */;
+			buildPhases = (
+				3910F46F14FB713900841664 /* Sources */,
+				3910F47014FB713900841664 /* Frameworks */,
+				3910F47114FB713900841664 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LevenshteinDistance;
+			productName = LevenshteinDistance;
+			productReference = 3910F47314FB713900841664 /* LevenshteinDistance */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3910F46A14FB713900841664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 3910F46D14FB713900841664 /* Build configuration list for PBXProject "LevenshteinDistance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3910F46814FB713900841664;
+			productRefGroup = 3910F47414FB713900841664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3910F47214FB713900841664 /* LevenshteinDistance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3910F46F14FB713900841664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3910F47B14FB713900841664 /* main.m in Sources */,
+				3910F48714FB77BE00841664 /* XcfLevenshteinDitstance.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3910F48014FB713900841664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3910F48114FB713900841664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3910F48314FB713900841664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LevenshteinDistance/LevenshteinDistance-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3910F48414FB713900841664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LevenshteinDistance/LevenshteinDistance-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3910F46D14FB713900841664 /* Build configuration list for PBXProject "LevenshteinDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3910F48014FB713900841664 /* Debug */,
+				3910F48114FB713900841664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3910F48214FB713900841664 /* Build configuration list for PBXNativeTarget "LevenshteinDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3910F48314FB713900841664 /* Debug */,
+				3910F48414FB713900841664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3910F46A14FB713900841664 /* Project object */;
+}
