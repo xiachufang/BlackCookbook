@@ -12,3 +12,7 @@ Objective C 是 Apple 公司 iOS 和 Mac OS 操作系统环境中的主力开发
 
 本仓库主要存储下厨房团队使用 Objective C 开发的 iOS/Mac OS
 或其它平台的非产品代码。
+
+Levenshtein Distance
+---------------------------
+字符串相似度判断算法 Levenshtein Distance 编辑距离算法。
