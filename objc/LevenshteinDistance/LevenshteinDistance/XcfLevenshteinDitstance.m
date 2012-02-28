@@ -10,42 +10,40 @@
 
 @implementation XcfLevenshteinDitstance
 
-+ (int) levenshteinDitstanceFromS:(NSString *)s toT:(NSString *)t {
-    int sl = (int)[s length]+1;
-    int tl = (int)[t length]+1;
++ (int) levenshteinDitstanceFromS:(NSString *)source toT:(NSString *)target {
+    int sl = (int)[source length]+1;
+    int tl = (int)[target length]+1;
     
     if (sl==0) {
         return tl;
     }
     if (tl==0) {
-        return tl;
+        return sl;
     }
     
-    int length = sl*tl;
-    int *buffer = malloc(sizeof(int)*length);
+    int length = sizeof(int)*sl*tl;
+    int *buffer = malloc(length);
     int **matrix = malloc(sizeof(int*)*sl);
-    memset(buffer, 0, sizeof(int)*length);
+    memset(buffer, 0, length);
     for (int i = 0; i<sl; i++) {
-        int *ptr  = buffer+(i*tl);
-        matrix[i] = ptr;
+        matrix[i] = buffer+(i*tl);
     }
     
     for (int i=0; i<sl; i++) {
         matrix[i][0]=i;
     }
-    for (int i=0; i<tl; i++) {
+    for (int i=1; i<tl; i++) {
         matrix[0][i]=i;
     }
     
     for (int i=1; i<sl; i++) {
-        char sc = [s cStringUsingEncoding:NSUTF8StringEncoding][i-1];
-        int cost;
+        unichar sc = [source characterAtIndex:i-1];
         for (int j=1; j<tl; j++) {
-            char tc = [t cStringUsingEncoding:NSUTF8StringEncoding][j-1];
-            cost = (sc == tc)?0:1;
-            int left = matrix[i-1][j]+1;
-            int above = matrix[i][j-1]+1;
-            int diag = matrix[i-1][i-1]+cost;
+            unichar tc = [target characterAtIndex:j-1];
+            int cost = (sc == tc)?0:1;
+            int above = matrix[i-1][j]+1;
+            int left = matrix[i][j-1]+1;
+            int diag = matrix[i-1][j-1]+cost;
             int value = MIN(above,MIN(left,diag));
             matrix[i][j]=value;
         }

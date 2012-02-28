@@ -17,18 +17,18 @@ int main (int argc, const char * argv[])
         // insert code here...
         NSLog(@"Levenshitein Distance!");
         
-        NSArray *array = [[NSArray alloc] initWithObjects:@"march.liu@gmail.com", 
-                          @"noreply@gmail.com", 
-                          @"noreply@qmail.com", 
-                          @"liuxin2@kingsoft.com",
-                          @"march@xiachufang.com", nil];
-        
-        for (NSString *source in array) {
-            for (NSString *target in array) {
-                NSLog(@"the ditance of %@ and %@ is %d", source, target,
-                      [XcfLevenshteinDitstance levenshteinDitstanceFromS:source toT:target]);
-            }
-        }
+       NSArray *array = [[NSArray alloc] initWithObjects:@"march.liu@gmail.com", 
+                         @"noreply@gmail.com", 
+                         @"noreply@qmail.com", 
+                         @"liuxin2@kingsoft.com",
+                         @"march@xiachufang.com", nil];
+
+       for (NSString *source in array) {
+           for (NSString *target in array) {
+               NSLog(@"the ditance of %@ and %@ is %d", source, target,
+                     [XcfLevenshteinDitstance levenshteinDitstanceFromS:source toT:target]);
+           }
+       }
     }
     return 0;
 }
