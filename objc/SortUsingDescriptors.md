@@ -8,9 +8,11 @@ Objective C 的容器排序
 
 测试框架用的是 GHUnitTest，这个框架的使用可以在它的 github 仓库中查阅文档，以为黑科技也许也会放出相关的例子。
 
-这里重点演示的是使用 NSDescriptor 对 NSMutableArray 对象排序，这个排序代码看起来很像 SQL 的 order by 语法。
+这里重点演示的是使用 NSSortDescriptor 对 NSMutableArray 对象排序，这个排序代码看起来很像 SQL 的 order by 语法。
 
-<div><code>
+数据源是一组常见的邮箱域名和一组故意写错的无效域名(例如 gmail.com 错写成 gmail。com 这种)。然后由字符串相似度算法计算出每个错误的域名，它对应的正确内容可能是哪一个。
+
+<pre><code>
 {
 -(void)testHostsAndSort {
     XcfLevenshteinDitstance *ruler = [[XcfLevenshteinDitstance alloc] initWithBufferSize:4096];
@@ -70,7 +72,7 @@ Objective C 的容器排序
         NSString *target = [record objectForKey:@"target"];
         NSNumber *value = [record objectForKey:@"distance"];
         GHTestLog(@"from %@ to %@ is %@", source, target, value);
-        GHAssertTrue([value intValue]>0, @"from %@ to %@ should more than zero", source, target);
+        GHAssertTrue([value intValue]&gt;0, @"from %@ to %@ should more than zero", source, target);
     }
     
     for (NSDictionary *record in table) {
@@ -81,4 +83,4 @@ Objective C 的容器排序
     [table release];
 }
 
-</code></div>
+</code></pre>
