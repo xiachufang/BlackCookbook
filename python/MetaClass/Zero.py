@@ -46,7 +46,7 @@ import copy
 
 class MetaVector3(type):
     def __new__(meta, name, bases, attrs):
-        attrs["__abs__"] = MetaVector3.__abs__
+        #attrs["__abs__"] = MetaVector3.__abs__
         return type.__new__(meta, name, bases, attrs)
 
     def __abs__(self):
@@ -68,16 +68,17 @@ class Vector(object):
         """
         return math.sqrt(self.x**2+self.y**2)
 
-class Vector3(object):
+class Vector3(Vector):
+    #这里 metaclass 覆盖了父类的 abs 运算，提供一个三维版本，
+    #如果没有这行代码，就会调用二维的 abs 运算，doctest 会出错。
     __metaclass__ = MetaVector3
-    """
-    z=2 平面上的向量
+    """ 
 >>> vec = Vector3(2, 2, 2)
 >>> abs(vec)
 3.4641016151377544
     """
     def __init__(self, x, y, z):
-        super.__init__(self, x, y)
+        super(Vector3, self).__init__(x, y)
         self.z=z
 
 def defineMetaVector3(z):
