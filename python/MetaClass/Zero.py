@@ -72,7 +72,7 @@ class Vector3(object):
     __metaclass__ = MetaVector3
     """
     z=2 平面上的向量
->>> vec = Vector3(2, 2)
+>>> vec = Vector3(2, 2, 2)
 >>> abs(vec)
 3.4641016151377544
     """
