@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="levenshtein.js"></script>
+  <link rel="stylesheet" href="http://localhost/static/qunit.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://localhost/static/qunit.js" ></script>
+  <script>
+      $(document).ready(function() {
+          module("判等");
+
+          test("判等测试", function() {
+              QUnit.equal(0, ditstance("qq.com", "qq.com"), "相等的字符串距离应为 0" );
+              QUnit.equal(0, ditstance("sina.com", "sina.com"), "相等的字符串距离应为 0" );
+              QUnit.equal(0, ditstance("hotmail.com", "hotmail.com"), "相等的字符串距离应为 0" );
+          });
+          test("不等测试", function() {
+              var value;
+              value = ditstance("qq.com", "qqcom");
+              ok((value > 0), "不相等字符串的距离应大于 0");
+              value = ditstance("sina.com", "sin.acom");
+              ok((value > 0), "不相等字符串的距离应大于 0");
+              value = ditstance("qq.com", "qq.cn");
+              ok((value > 0), "不相等字符串的距离应大于 0");
+              value = ditstance("gmail.com", "gmail.com.");
+              ok((value > 0), "不相等字符串的距离应大于 0");
+          });
+
+          module("距离计算");
+
+          test("差异计算", function() {
+              var value;
+              value = ditstance("qq.com", "qq.cn");
+              QUnit.equal(value, 2, "qq.com 和 qq.cn 距离为 2");
+              value = ditstance("qq.cn", "qq.com");
+              QUnit.equal(value, 2, "qq.cn 和 qq.com 距离为 2");
+              value = ditstance("gmail.com.", "gmail.com");
+              QUnit.equal(value, 1, "gmail.com. 和 gmail.com 距离为 1");
+              value = ditstance(".gmail.com", "gmail.com");
+              QUnit.equal(value, 1, ".gmail.com 和 gmail.com 距离为 1");
+              value = ditstance("", "gmail.com");
+              QUnit.equal(value, 9, "'' 和 gmail.com 距离为 9");
+              value = ditstance("139.com", "19.com");
+              QUnit.equal(value, 1, "139.com 和 19.com 距离为 1");
+          });
+      });
+  </script>
+</head>
+<body>
+  <h1 id="qunit-header">Levenshtein Ditstance QUnit</h1>
+  此页面需要 qunit 支持
+<h2 id="qunit-banner"></h2>
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests"></ol>
+</body>
+</html>

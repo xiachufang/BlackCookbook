@@ -14,11 +14,11 @@
     int sl = (int)[source length]+1;
     int tl = (int)[target length]+1;
     
-    if (sl==0) {
-        return tl;
+    if (sl==1) {
+        return tl - 1;
     }
-    if (tl==0) {
-        return sl;
+    if (tl==1) {
+        return sl - 1;
     }
     
     int length = sizeof(int)*sl*tl;

@@ -23,14 +23,18 @@ def ditstance(source, target):
 1
 >>> ditstance("qq.", "qq.com")
 3
+>>> ditstance("gmail.com", ".gmail.com")
+1
+>>> ditstance(".gmail.com", "gmail.com")
+1
     """
     src_length = len(source)+1
     tgt_length = len(target)+1
 
-    if src_length == 0:
-        return tl
-    if tgt_length == 0:
-        return tgt_length
+    if src_length == 1:
+        return tgt_length - 1
+    if tgt_length == 1:
+        return src_length - 1
 
     matrix = [range(tgt_length)]
     for i in range(1, src_length):
