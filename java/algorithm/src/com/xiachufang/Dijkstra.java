@@ -51,7 +51,7 @@ public class Dijkstra {
         init();
     }
 
-    public void init() {     //初始化open/close表 
+    public void init() {     //?????pen/close�?
 
         routes = new BestRoute[links[sta].length];
         for (int i = 0; i < links[sta].length; i++) {
@@ -79,13 +79,13 @@ public class Dijkstra {
     public LinkedList<Integer> calculate() {
 
         int pre = sta;
-        while (routes[dst].isInOpen()) {    //如果未到达终点循环开始
+        while (routes[dst].isInOpen()) {    //�?????达�??�循???�?
             pre = findMin();
             if (routes[pre].isInOpen()) {
                 routes[pre].setInOpen(false) ;
-            }                      //将open表中最小cast的bestroute编号赋值给next  并且将next点从open表删除(即将next点的inopen置为false)
+            }                      //�?pen表中???cast??estroute�??�??�?ext  并�?�?ext?��?open表�????��?next?��?inopen�?��false)
             for (int i = 0; i < routes.length; i++) {      //
-                if (links[pre][i] != Integer.MAX_VALUE) { //如果next可达i  开始循环
+                if (links[pre][i] != Integer.MAX_VALUE) { //�??next??��i  �??�??
                     if (links[pre][i] + routes[pre].getCast() < routes[i].getCast() && routes[i].isInOpen()) {
                         routes[i].setCast(links[pre][i] + routes[pre].getCast());
                         routes[i].setLastPre(pre);
