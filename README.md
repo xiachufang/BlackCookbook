@@ -1,5 +1,12 @@
-下厨房黑科技
+Black Cookbook in Dwarf Artisan
 =============
+
+Welcome to Dwarf Artisan's Black Cookbook.
+
+This this a fork from [Xia Chu Fang Black Cookbook] [](https://github.com/xiachufang/BlackCookbook), a knowlage code library.
+
+下厨房黑科技
+===================
 
 下厨房技术团队的开放仓库。这里主要下厨房的工程师们在工作和学习研究过程中积累的
 心得体会。包括一些练习和尝试。
