@@ -3,7 +3,7 @@ Black Cookbook in Dwarf Artisan
 
 Welcome to Dwarf Artisan's Black Cookbook.
 
-This this a fork from [Xia Chu Fang Black Cookbook] [](https://github.com/xiachufang/BlackCookbook), a knowlage code library.
+This this a fork from [Xia Chu Fang Black Cookbook](https://github.com/xiachufang/BlackCookbook), a knowlage code library.
 
 下厨房黑科技
 ===================
