@@ -2,10 +2,10 @@ A OS X APP Without XCode
 ========================
 This create by editor(Emacs), use .h, .m, Info.plist and Makefile.
 
-It show a sample app without any window but a main menu.
+It show a sample app without any window but a status bar menu.
 
-The first menu while become app menu, so the app name will override
-menu title.
+The app menu and the window menu while become the status bar menu's
+submenu.
 
 I make it support arc.
 
