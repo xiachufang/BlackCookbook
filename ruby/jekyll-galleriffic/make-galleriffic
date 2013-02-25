@@ -1,0 +1,82 @@
+#!/usr/bin/env rvm use default do ruby
+
+# for all png in the dir path, ouput the small version (75x75) 
+#     and large version(512x512) into the dirs.
+# see the galleriffic dir is subdir in a dir named images.
+# see the template file in my home bin (will reflact)
+# see the template file will out put to _include/DA/ and named 
+#     galleriffice dir name
+
+require "RMagicK"
+include Magick
+require "Liquid"
+
+large = 512.0
+medium = 320.0
+small = 75.0
+
+origin_path = Dir.pwd()
+gname = ARGV[0]
+path = "images/"+gname
+
+Dir.chdir(path)
+
+large_dir = "large"
+medium_dir = "medium"
+small_dir = "small"
+
+images = []
+
+if not Dir.exist?(large_dir) then
+  Dir.mkdir(large_dir)
+end
+
+if not Dir.exist?(medium_dir) then
+  Dir.mkdir(medium_dir)
+end
+
+if not Dir.exist?(small_dir) then
+  Dir.mkdir(small_dir)
+end
+
+Dir.glob("*.png") do |image_name |
+  image = Image::read(image_name).first
+  max = [image.columns, image.rows].max
+  large_name = large_dir+"/"+image_name
+  if max > large then
+    scale = large/max
+    image.resize(image.columns*scale, image.rows*scale).write large_name
+  else
+    image.write large_name
+  end
+
+  image = Image::read(image_name).first
+  max = [image.columns, image.rows].max
+  medium_name = medium_dir+"/"+image_name
+  if max > medium then
+    scale = medium/max
+    image.resize(image.columns*scale, image.rows*scale).write medium_name
+  else
+    image.write medium_name
+  end
+    
+  small_name = small_dir+"/"+image_name
+  if max > small then
+    scale = small/max
+    image.resize(image.columns*scale, image.rows*scale).write small_name
+  else
+    image.write small_name
+  end
+  images << File.basename(image_name, ".png")
+end
+
+Dir.chdir(origin_path)
+template = File.read "/Users/march/bin/template.html"
+@template = Liquid::Template.parse(template)
+re = @template.render("images"=>images, "galleriffic"=>gname)
+if not Dir.exist? "_includes/DA" then
+  Dir.mkdir "_includes/DA"
+end
+tfile = File.open("_includes/DA/"+gname, "w+")
+tfile.write re
+tfile.close
